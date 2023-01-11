@@ -2,21 +2,23 @@ PODS:
   - Adjust (4.29.7):
     - Adjust/Core (= 4.29.7)
   - Adjust/Core (4.29.7)
-  - Amplitude (8.5.0)
-  - Analytics (4.1.6)
-  - Appboy-iOS-SDK (4.5.1):
-    - Appboy-iOS-SDK/UI (= 4.5.1)
-  - Appboy-iOS-SDK/ContentCards (4.5.1):
+  - Amplitude (8.14.0):
+    - AnalyticsConnector (~> 1.0.0)
+  - Analytics (4.1.7)
+  - AnalyticsConnector (1.0.0)
+  - Appboy-iOS-SDK (4.5.2):
+    - Appboy-iOS-SDK/UI (= 4.5.2)
+  - Appboy-iOS-SDK/ContentCards (4.5.2):
     - Appboy-iOS-SDK/Core
     - SDWebImage (< 6, >= 5.8.2)
-  - Appboy-iOS-SDK/Core (4.5.1)
-  - Appboy-iOS-SDK/InAppMessage (4.5.1):
+  - Appboy-iOS-SDK/Core (4.5.2)
+  - Appboy-iOS-SDK/InAppMessage (4.5.2):
     - Appboy-iOS-SDK/Core
     - SDWebImage (< 6, >= 5.8.2)
-  - Appboy-iOS-SDK/NewsFeed (4.5.1):
+  - Appboy-iOS-SDK/NewsFeed (4.5.2):
     - Appboy-iOS-SDK/Core
     - SDWebImage (< 6, >= 5.8.2)
-  - Appboy-iOS-SDK/UI (4.5.1):
+  - Appboy-iOS-SDK/UI (4.5.2):
     - Appboy-iOS-SDK/ContentCards
     - Appboy-iOS-SDK/Core
     - Appboy-iOS-SDK/InAppMessage
@@ -25,20 +27,20 @@ PODS:
     - AppsFlyerFramework/Main (= 6.8.1)
   - AppsFlyerFramework/Main (6.8.1)
   - Flutter (1.0.0)
-  - flutter_segment (3.12.1):
-    - Analytics (= 4.1.6)
+  - flutter_segment (3.12.2):
+    - Analytics (= 4.1.7)
     - Flutter
     - Segment-Adjust (= 3.1.4)
-    - Segment-Amplitude (= 3.3.2)
+    - Segment-Amplitude (= 3.4.0)
     - Segment-Appboy (= 4.6.0)
-    - segment-appsflyer-ios (= 6.8.0)
-  - SDWebImage (5.13.5):
-    - SDWebImage/Core (= 5.13.5)
-  - SDWebImage/Core (5.13.5)
+    - segment-appsflyer-ios (= 6.8.1)
+  - SDWebImage (5.14.3):
+    - SDWebImage/Core (= 5.14.3)
+  - SDWebImage/Core (5.14.3)
   - Segment-Adjust (3.1.4):
     - Adjust (~> 4.29.3)
     - Analytics
-  - Segment-Amplitude (3.3.2):
+  - Segment-Amplitude (3.4.0):
     - Amplitude (~> 8.3)
     - Analytics
   - Segment-Appboy (4.6.0):
@@ -47,12 +49,12 @@ PODS:
   - Segment-Appboy/Full-SDK (4.6.0):
     - Analytics
     - Appboy-iOS-SDK (~> 4.5.1)
-  - segment-appsflyer-ios (6.8.0):
+  - segment-appsflyer-ios (6.8.1):
     - Analytics
-    - segment-appsflyer-ios/Main (= 6.8.0)
-  - segment-appsflyer-ios/Main (6.8.0):
+    - segment-appsflyer-ios/Main (= 6.8.1)
+  - segment-appsflyer-ios/Main (6.8.1):
     - Analytics
-    - AppsFlyerFramework (~> 6.8.0)
+    - AppsFlyerFramework (~> 6.8.1)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -63,6 +65,7 @@ SPEC REPOS:
     - Adjust
     - Amplitude
     - Analytics
+    - AnalyticsConnector
     - Appboy-iOS-SDK
     - AppsFlyerFramework
     - SDWebImage
@@ -79,18 +82,19 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Adjust: 91a06a01e4bb35b432e26b5d5bb8995b95fc381c
-  Amplitude: ef9ed339ddd33c9183edf63fa4bbaa86cf873321
-  Analytics: eefe524436f904b8bb3f8c8c3425280e43b34efc
-  Appboy-iOS-SDK: 93f8c7e0820a79b4ef5367fae32406f03a30ca97
+  Amplitude: bff4ceaad2a79e908682134d75dc862960594ea6
+  Analytics: 3106b5af9b799c934f98a68ab8ba199f1c603fdb
+  AnalyticsConnector: 4c386d5972ac9da86e22d668564dbbac97558754
+  Appboy-iOS-SDK: cc7c70b595499bd8d1338aa66f3c9e7a71f81bc0
   AppsFlyerFramework: a664325124485223296354b4eec335f5340a6df8
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  flutter_segment: f0351abe5d4e2ea911743dacc09530fc6d4145b8
-  SDWebImage: 23d714cd599354ee7906dbae26dff89b421c4370
+  flutter_segment: 8b91d3dfea5a99e0ca2f5ffa9f19b6782cf8e7c5
+  SDWebImage: 9c36e66c8ce4620b41a7407698dda44211a96764
   Segment-Adjust: 1a12861ab2e9372fc70af949057490858666cd37
-  Segment-Amplitude: 6c1e59c8c278a21029ba7a6a788fcb31b9233a2c
+  Segment-Amplitude: 5f56556d1ab809ce41b675ff7b31f7516e6d2b97
   Segment-Appboy: b160f7416f23ffe97632bf2cf61407660a741136
-  segment-appsflyer-ios: 9b84c1b7f94bb7a3c5826c9214cd0630b831e208
+  segment-appsflyer-ios: 2cbab76526151c1f7e3aec5e0c0adedca81aa1fa
 
 PODFILE CHECKSUM: 9ae1252a315aaf76477de027d056482cf2fff45d
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
