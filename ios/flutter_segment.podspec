@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_segment'
-  s.version          = '3.12.1'
+  s.version          = '3.12.2'
   s.summary          = 'Segment.io plugin for Flutter'
   s.description      = <<-DESC
 Library to let Flutter apps use Segment.io
@@ -17,11 +17,12 @@ Library to let Flutter apps use Segment.io
   s.public_header_files = 'Classes/**/*.h'
 
   s.dependency 'Flutter'
-  s.dependency 'Analytics', '4.1.6'
-  s.dependency 'Segment-Amplitude', '3.3.2'
-  s.dependency 'segment-appsflyer-ios', '6.8.0'
+  s.dependency 'Analytics', '4.1.7'
+  s.dependency 'Segment-Amplitude', '3.4.0'
+  s.dependency 'segment-appsflyer-ios', '6.8.1'
   s.dependency 'Segment-Appboy', '4.6.0'
-  s.dependency 'Segment-Adjust', '3.1.4'
+  # s.dependency 'Segment-Adjust', '3.1.4'
+  s.dependency 'Adjust', '~> 4.29.3' # remove me when bring back Segment-Adjust
   s.ios.deployment_target = '11.0'
 
   # Added because Segment-Amplitude dependencies on iOS cause this error:
