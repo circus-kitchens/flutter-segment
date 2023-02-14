@@ -27,6 +27,6 @@ Library to let Flutter apps use Segment.io
 
   # Added because Segment-Amplitude dependencies on iOS cause this error:
   # [!] The 'Pods-Runner' target has transitive dependencies that include statically linked binaries: (Segment-Amplitude)
-  s.static_framework = truead
+  s.static_framework = true
 end
 
